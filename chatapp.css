@@ -1,1 +1,108 @@
-/* CSS declarations go here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 650px;
+  margin: 0 auto;
+  color: #000;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+body h1 {
+  text-align: center;
+}
+
+.left {
+  position: relative;
+  margin-right: 10px;
+  float: left;
+  overflow: hidden;
+}
+
+#config, #messages, #insert-message {
+  position: relative;
+  width: 600px;
+  margin: 5px auto;
+  padding: 3px;
+  color: #fff;
+  background-color: #216f90;
+  border: 1px solid #333;
+}
+
+#change-config label {
+  display: block;
+}
+
+#change-config {
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  position: relative;
+  overflow: hidden;
+}
+
+.title h4 {
+  position: relative;
+  float: left;
+}
+
+.title .info {
+  position: relative;
+  float: right;
+  margin-left: 10px;
+  font-size: 11px;
+  color: #fff;
+}
+
+.title .info .value {
+  color: #000;
+}
+
+input#username, select#channel, input#update {
+  display: block;
+  font-size: 12px;
+}
+
+input#username {
+  border: 1px solid #fff;
+  height: 18px;
+}
+
+input#update {
+  height: 20px;
+}
+
+#config h4, #messages .title, #insert-message h4 {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 3px;
+}
+
+#messages-panel {
+  height: 200px;
+  overflow: auto;
+}
+
+#messages-panel div span.msg-author {
+/*  color: #d9d5d5;*/
+  color: #a9a5a5;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#messages-panel div span.msg-author {
+  font-size: 11px;
+}
+
+#new-message input {
+  position: relative;
+  width: 598px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  font-size: 12px;
+}
