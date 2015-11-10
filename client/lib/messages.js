@@ -37,16 +37,16 @@ Template.messages.helpers({
 Template.messages.events({
   "submit #change-config": function (event) {
     event.preventDefault();
-    var username = event.target.username.value;
-    var channel = event.target.channel.value;
-
+    var username = $(event.target.username).val();
+    var channel = $(event.target.channel).val();
+    
     Session.set('username', username);
     Session.set('channelSelected', channel);
   },
 
   "submit #new-message": function (event) {      
     event.preventDefault();
-    var message = event.target.message.value;
+    var message = $(event.target.message).val();
     Meteor.call('insertMessage', Session.get('channelSelected'), Session.get('username'), message);
     event.target.message.value = "";
     Tracker.afterFlush(updateScroll);
